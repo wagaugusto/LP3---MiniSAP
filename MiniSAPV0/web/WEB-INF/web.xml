@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>LocaisVer</servlet-name>
+        <servlet-class>com.LocaisVer</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LocalDAO</servlet-name>
+        <servlet-class>dao.LocalDAO</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Local</servlet-name>
+        <servlet-class>model.Local</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LocaisSalvar</servlet-name>
+        <servlet-class>com.LocaisSalvar</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LocaisEditar</servlet-name>
+        <servlet-class>com.LocaisEditar</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LocaisExcluir</servlet-name>
+        <servlet-class>com.LocaisExcluir</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LocaisEditar2</servlet-name>
+        <servlet-class>com.LocaisEditar2</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LocaisCriar</servlet-name>
+        <servlet-class>com.LocaisCriar</servlet-class>
+    </servlet>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
