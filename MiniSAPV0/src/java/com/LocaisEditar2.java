@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;  
 import java.io.PrintWriter;  
-import dao.LocalDao;
+import dao.LocalDAO;
 import model.Local;
   
 import javax.servlet.ServletException;  
@@ -22,8 +22,7 @@ public class LocaisEditar2 extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)   
           throws ServletException, IOException {  
         response.setContentType("text/html");  
-        PrintWriter out=response.getWriter();  
-          
+        PrintWriter out=response.getWriter();         
         String sid=request.getParameter("id");  
         int id=Integer.parseInt(sid);  
         String name=request.getParameter("nome");  
@@ -32,7 +31,7 @@ public class LocaisEditar2 extends HttpServlet {
         e.setId(id);  
         e.setNome(name);          
           
-        int status=LocalDao.update(e);  
+        int status=LocalDAO.update(e);  
         if(status>0){  
             response.sendRedirect("LocaisVer");  
         }else{  

@@ -10,7 +10,7 @@
 <h1>Selecione a Opção</h1>  
 <br/>  
 <a href="LocaisVer">Locais</a>  
-<a href="">Equipamentos</a>  
+<a href="EquipamentosVer">Equipamentos</a>  
 <a href="">Especialidades</a>  
 <a href="">Notas de Manutenção</a>  
 <a href="">Ordens de Manutenção</a>  

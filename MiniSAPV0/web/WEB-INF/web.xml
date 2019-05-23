@@ -32,6 +32,18 @@
         <servlet-name>LocaisCriar</servlet-name>
         <servlet-class>com.LocaisCriar</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>EquipamentosVer</servlet-name>
+        <servlet-class>com.EquipamentosVer</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EquipamentosCriar</servlet-name>
+        <servlet-class>com.EquipamentosCriar</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EquipamentosSalvar</servlet-name>
+        <servlet-class>com.EquipamentosSalvar</servlet-class>
+    </servlet>
     <session-config>
         <session-timeout>
             30

@@ -2,8 +2,6 @@ package com;
 
 import java.io.IOException;  
 import java.io.PrintWriter;  
-import dao.LocalDao;
-import model.Local;
   
 import javax.servlet.ServletException;  
 import javax.servlet.annotation.WebServlet;  
@@ -15,7 +13,8 @@ public class LocaisCriar extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)   
            throws ServletException, IOException {  
         response.setContentType("text/html");  
-        PrintWriter out=response.getWriter();  
+        PrintWriter out=response.getWriter(); 
+        out.println("<link href='//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css' rel='stylesheet'>");           
         out.println("<h1>Criar Local</h1>");                    
         out.print("<form action='LocaisSalvar' method='post'>");  
         out.print("<table>");           

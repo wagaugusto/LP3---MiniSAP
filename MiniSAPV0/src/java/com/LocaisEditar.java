@@ -2,7 +2,7 @@ package com;
 
 import java.io.IOException;  
 import java.io.PrintWriter;  
-import dao.LocalDao;
+import dao.LocalDAO;
 import model.Local;
   
 import javax.servlet.ServletException;  
@@ -15,12 +15,13 @@ public class LocaisEditar extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)   
            throws ServletException, IOException {  
         response.setContentType("text/html");  
-        PrintWriter out=response.getWriter();  
+        PrintWriter out=response.getWriter();
+        out.println("<link href='//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css' rel='stylesheet'>");           
         out.println("<h1>Atualizar Local</h1>");  
         String sid=request.getParameter("id");  
         int id=Integer.parseInt(sid);  
           
-        Local e=LocalDao.getById(id);  
+        Local e=LocalDAO.getById(id);  
           
         out.print("<form action='LocaisEditar2' method='post'>");  
         out.print("<table>");  
