@@ -11,8 +11,8 @@
 <br/>  
 <a href="LocaisVer">Locais</a>  
 <a href="EquipamentosVer">Equipamentos</a>  
-<a href="">Especialidades</a>  
-<a href="">Notas de Manutenção</a>  
+<a href="EspecialidadesVer">Especialidades</a>  
+<a href="NotasVer">Notas de Manutenção</a>  
 <a href="">Ordens de Manutenção</a>  
   
 </body>  

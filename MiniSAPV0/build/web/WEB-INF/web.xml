@@ -2,7 +2,7 @@
 <web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
     <servlet>
         <servlet-name>LocaisVer</servlet-name>
-        <servlet-class>com.LocaisVer</servlet-class>
+        <servlet-class>com.Locais.LocaisVer</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>LocalDAO</servlet-name>
@@ -14,36 +14,76 @@
     </servlet>
     <servlet>
         <servlet-name>LocaisSalvar</servlet-name>
-        <servlet-class>com.LocaisSalvar</servlet-class>
+        <servlet-class>com.Locais.LocaisSalvar</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>LocaisEditar</servlet-name>
-        <servlet-class>com.LocaisEditar</servlet-class>
+        <servlet-class>com.Locais.LocaisEditar</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>LocaisExcluir</servlet-name>
-        <servlet-class>com.LocaisExcluir</servlet-class>
+        <servlet-class>com.Locais.LocaisExcluir</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>LocaisEditar2</servlet-name>
-        <servlet-class>com.LocaisEditar2</servlet-class>
+        <servlet-class>com.Locais.LocaisEditar2</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>LocaisCriar</servlet-name>
-        <servlet-class>com.LocaisCriar</servlet-class>
+        <servlet-class>com.Locais.LocaisCriar</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>EquipamentosVer</servlet-name>
-        <servlet-class>com.EquipamentosVer</servlet-class>
+        <servlet-class>com.Equipamentos.EquipamentosVer</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>EquipamentosCriar</servlet-name>
-        <servlet-class>com.EquipamentosCriar</servlet-class>
+        <servlet-class>com.Equipamentos.EquipamentosCriar</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>EquipamentosSalvar</servlet-name>
-        <servlet-class>com.EquipamentosSalvar</servlet-class>
+        <servlet-class>com.Equipamentos.EquipamentosSalvar</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>EquipamentosExcluir</servlet-name>
+        <servlet-class>com.Equipamentos.EquipamentosExcluir</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EquipamentosEditar</servlet-name>
+        <servlet-class>com.Equipamentos.EquipamentosEditar</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EquipamentosEditar2</servlet-name>
+        <servlet-class>com.Equipamentos.EquipamentosEditar2</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EspecialidadesVer</servlet-name>
+        <servlet-class>com.Especialidades.EspecialidadesVer</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EspecialidadesCriar</servlet-name>
+        <servlet-class>com.Especialidades.EspecialidadesCriar</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EspecialidadesSalvar</servlet-name>
+        <servlet-class>com.Especialidades.EspecialidadesSalvar</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EspecialidadesExcluir</servlet-name>
+        <servlet-class>com.Especialidades.EspecialidadesExcluir</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EspecialidadesEditar</servlet-name>
+        <servlet-class>com.Especialidades.EspecialidadesEditar</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EspecialidadesEditar2</servlet-name>
+        <servlet-class>com.Especialidades.EspecialidadesEditar2</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>NotasVer</servlet-name>
+        <servlet-class>com.Notas.NotasVer</servlet-class>
+    </servlet>    
     <session-config>
         <session-timeout>
             30
