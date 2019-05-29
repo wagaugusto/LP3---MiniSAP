@@ -17,8 +17,15 @@ public class LocaisVer extends HttpServlet {
                throws ServletException, IOException {  
         response.setContentType("text/html");  
         PrintWriter out=response.getWriter();
-        out.println("<link href='//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css' rel='stylesheet'>");           
-        out.println("<a href='LocaisCriar'>Adicionar Novo Local</a>");  
+        out.println("<link href='//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css' rel='stylesheet'>");                     
+        out.println("<link href='style.css' rel='stylesheet'>"); 
+        out.println("<ul class='topnav'>"); 
+        out.println("<li><a href='LocaisVer'>Locais</a></li>"); 
+        out.println("<li><a href='EquipamentosVer'>Equipamentos</a></li>"); 
+        out.println("<li><a href='EspecialidadesVer'>Especialidades</a></li>"); 
+        out.println("<li><a href='NotasVer'>Notas de Manutenção</a></li>"); 
+        out.println("<li><a href='OrdensVer'>Ordens de Manutenção</a></li>"); 
+        out.println("</ul>");
         out.println("<h1>Lista de Locais</h1>");  
           
         List<Local> list=LocalDAO.getAll();  
@@ -30,8 +37,8 @@ public class LocaisVer extends HttpServlet {
                  "</td><td><a href='LocaisEditar?id="+e.getId()+"'>editar</a></td>"+
                  "<td><a href='LocaisExcluir?id="+e.getId()+"'>excluir</a></td></tr>");  
         }  
-        out.print("</table>");  
-          
+        out.print("</table><br>");  
+        out.println("<a href='LocaisCriar'>Adicionar Novo Local</a>");  
         out.close();  
     }  
 }

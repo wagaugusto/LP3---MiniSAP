@@ -37,7 +37,7 @@ public class NotaDAO {
         try{  
             Connection con=NotaDAO.getConnection();  
             PreparedStatement ps=con.prepareStatement(  
-                         "update notas set titulo=?,descricao=?,localID=? where id=?");  
+                         "update notas set titulo=?,descricao=?,equipamentoID=? where id=?");  
             ps.setString(1,e.getTitulo());
             ps.setString(2,e.getDescricao());  
             ps.setInt(3,e.getEquipamentoId());                

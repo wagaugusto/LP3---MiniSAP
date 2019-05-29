@@ -17,8 +17,15 @@ public class EquipamentosVer extends HttpServlet {
                throws ServletException, IOException {  
         response.setContentType("text/html");  
         PrintWriter out=response.getWriter();          
-        out.println("<link href='//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css' rel='stylesheet'>");           
-        out.println("<a href='EquipamentosCriar'>Adicionar Novo Equipamento</a>");  
+        out.println("<link href='//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css' rel='stylesheet'>");                    
+        out.println("<link href='style.css' rel='stylesheet'>"); 
+        out.println("<ul class='topnav'>"); 
+        out.println("<li><a href='LocaisVer'>Locais</a></li>"); 
+        out.println("<li><a href='EquipamentosVer'>Equipamentos</a></li>"); 
+        out.println("<li><a href='EspecialidadesVer'>Especialidades</a></li>"); 
+        out.println("<li><a href='NotasVer'>Notas de Manutenção</a></li>"); 
+        out.println("<li><a href='OrdensVer'>Ordens de Manutenção</a></li>"); 
+        out.println("</ul>");
         out.println("<h1>Lista de Equipamentos</h1>");  
           
         List<Equipamento> list=EquipamentoDAO.getAll();  
@@ -30,8 +37,8 @@ public class EquipamentosVer extends HttpServlet {
                  "</td><td>"+e.getLocalNome()+"</td><td><a href='EquipamentosEditar?id="+e.getId()+
                  "'>editar</a></td><td><a href='EquipamentosExcluir?id="+e.getId()+"'>excluir</a></td></tr>");  
         }  
-        out.print("</table>");  
-          
+        out.print("</table><br>");  
+        out.println("<a href='EquipamentosCriar'>Adicionar Novo Equipamento</a>");   
         out.close();  
     }  
 }

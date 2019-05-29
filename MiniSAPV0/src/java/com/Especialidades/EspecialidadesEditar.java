@@ -17,6 +17,14 @@ public class EspecialidadesEditar extends HttpServlet {
         response.setContentType("text/html");  
         PrintWriter out=response.getWriter();
         out.println("<link href='//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css' rel='stylesheet'>");           
+        out.println("<link href='style.css' rel='stylesheet'>"); 
+        out.println("<ul class='topnav'>"); 
+        out.println("<li><a href='LocaisVer'>Locais</a></li>"); 
+        out.println("<li><a href='EquipamentosVer'>Equipamentos</a></li>"); 
+        out.println("<li><a href='EspecialidadesVer'>Especialidades</a></li>"); 
+        out.println("<li><a href='NotasVer'>Notas de Manutenção</a></li>"); 
+        out.println("<li><a href='OrdensVer'>Ordens de Manutenção</a></li>"); 
+        out.println("</ul>");
         out.println("<h1>Atualizar Especialidade</h1>");  
         String sid=request.getParameter("id");  
         int id=Integer.parseInt(sid);  

@@ -83,7 +83,51 @@
     <servlet>
         <servlet-name>NotasVer</servlet-name>
         <servlet-class>com.Notas.NotasVer</servlet-class>
-    </servlet>    
+    </servlet>
+    <servlet>
+        <servlet-name>NotasCriar</servlet-name>
+        <servlet-class>com.Notas.NotasCriar</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>NotasSalvar</servlet-name>
+        <servlet-class>com.Notas.NotasSalvar</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>NotasExcluir</servlet-name>
+        <servlet-class>com.Notas.NotasExcluir</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>NotasEditar</servlet-name>
+        <servlet-class>com.Notas.NotasEditar</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>NotasEditar2</servlet-name>
+        <servlet-class>com.Notas.NotasEditar2</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>OrdensVer</servlet-name>
+        <servlet-class>com.Ordens.OrdensVer</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>OrdensCriar</servlet-name>
+        <servlet-class>com.Ordens.OrdensCriar</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>OrdensSalvar</servlet-name>
+        <servlet-class>com.Ordens.OrdensSalvar</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>OrdensExcluir</servlet-name>
+        <servlet-class>com.Ordens.OrdensExcluir</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>OrdensEditar</servlet-name>
+        <servlet-class>com.Ordens.OrdensEditar</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>OrdensEditar2</servlet-name>
+        <servlet-class>com.Ordens.OrdensEditar2</servlet-class>
+    </servlet>
     <session-config>
         <session-timeout>
             30
